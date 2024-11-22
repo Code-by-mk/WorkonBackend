@@ -104,3 +104,131 @@ for (let x of language) {
 }
 
 console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        //    Day-5 
+
+
+                        //    Closures
+
+
+
+  function init()
+  {
+    var name="mohit";
+
+     function display()
+       {
+        console.log(name);
+        }
+     display();
+   }    
+
+    init();
+
+
+
+
+function setCount() {
+    let number = 0;
+
+    return function () {
+      console.log(++number);
+    };
+  }
+
+  const counter = setCount();
+  counter();
+  counter();
+
+
+
+
+
+    let counter =0
+
+    function add ()
+    {
+        counter+=1;
+    }
+
+    add();
+    add();
+
+   console.log(counter);
+
+
+
+
+
+
+
+
+
+            //  Rest parameter
+
+var colors = ["Violet", "Indigo", "Blue", "Green", "Yellow", "Orange", "Red"];
+
+
+var [a, b, ...args] = colors;
+console.log(a);
+console.log(b);
+console.log(args);
+
+
+
+
+
+
+
+
+
+function num(...digit) {
+    return digit;
+}
+
+console.log(num(10, 20, 30));
+
+
+
+    //   Spread Operator
+
+
+    function sum(num1, num2 , num3 ) {
+        console.log(num1 + num2 + num3 );
+    }
+    
+    let num1 = [1, 3, 4, 5];
+    
+    
+    sum(...num1); 
+
+
+
+
+
+    const obj = {
+        firstname: "mohit",
+        lastname: "saini",
+    };
+    const obj2 = { ...obj };
+    console.log(obj2);
+
+
+
+    const array1 = [1, 2, 3];
+    const array2 = [4, 5, 6];
+    const combinedArray = [...array1, ...array2];
+    console.log(combinedArray); // Outputs: [1, 2, 3, 4, 5, 6]

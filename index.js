@@ -232,3 +232,196 @@ console.log(num(10, 20, 30));
     const array2 = [4, 5, 6];
     const combinedArray = [...array1, ...array2];
     console.log(combinedArray); // Outputs: [1, 2, 3, 4, 5, 6]
+
+
+
+
+
+    // Day 7 Array Methods
+
+
+
+
+    let Name = ["Mohit","Rohit","Amit","Sumit","John"];
+    let array=Name.length;
+        console.log(array);
+
+
+
+//    To String() method
+
+console.log(Name.toString());
+
+
+
+// AT method
+
+console.log(Name.at(3));
+
+
+
+
+// Join Method
+
+let number=[2,4,6,8,9]
+let arr=number.join("#");
+console.log(arr);
+
+
+// pop() method
+
+
+let number =[12,8,5,3,7,15,23];
+let newnum=number.pop();
+console.log(newnum);
+console.log(number);
+
+
+// push()
+
+
+let number =[12,8,5,3,7,15,23];
+let arr=number.push(22);
+console.log(arr);
+console.log(number);
+
+
+// shift() & unshift() & delete
+
+let fruits = ["Banana", "Orange", "Apple", "Mango"];
+  let newarr=fruits.shift();
+  console.log(fruits);
+
+
+      
+
+let newarr=fruits.unshift("lemon");
+  console.log(newarr);
+
+
+
+
+let newarr=delete fruits[0];
+  console.log(fruits);
+  console.log(newarr);
+
+
+// cancat()
+
+
+let num1=[1,2];
+let num2=[3,4,5,6]
+let num3=[7,8]
+let arr=num1.concat(num2,num3);
+console.log(arr);
+
+
+let Names=["mohit","Rohit","sumit"]
+
+let newarr=Names.concat("amit");
+
+console.log(newarr);
+
+
+// CopyWithin()
+
+const arr1= ["Banana", "Orange", "Apple", "Mango"];
+const newarry=arr1.copyWithin(2,0);;
+console.log(newarry);
+
+
+
+// flat() method 
+
+const myArr = [[1,2,3],[3,4,[2,1]],[5,6,7,8]];
+const newArr = myArr.flat(2);
+console.log(newArr);
+
+
+// splice
+
+const fruit = ["Banana", "Orange", "Apple", "Mango"];
+const newarry=fruit.splice(2,0,"lemon","orange");
+
+console.log(newarry);
+console.log(fruit);
+
+
+// slice
+/const newarry=fruit.slice(2);
+console.log(newarry);
+
+
+// to spliced
+const months = ["Jan", "Feb", "Mar", "Apr"];
+const spliced = months.toSpliced(0, 1);
+
+console.log(spliced);
+
+
+
+// filter() method
+
+
+
+const ages = [25, 30, 35, 40, 45, 50, 55, 60, 65, 75, 70];
+
+const check = () => {
+    const filteredAges = ages.filter(age => age > 35);
+    console.log(filteredAges); 
+};
+
+check();
+
+
+// find
+
+
+const ages = [3, 10, 18, 20];
+
+console.log(ages.find(checkAge));
+
+function checkAge(age) {
+  return age > 18;
+}
+
+
+//  reduce
+
+const numbers = [1, 2, 3, 4,5,7];
+const sum = numbers.reduce((acc, num) => acc + num, 0);
+console.log(sum);
+
+
+// map method
+
+
+const numbers = [1, 2, 3, 4];
+const doubled = numbers.map(num => num * 2);
+console.log(doubled);
+
+
+
+
+// for each
+
+let text = "";
+const fruits = ["apple", "orange", "cherry"];
+fruits.forEach(myFunction);
+
+console.log(text);
+ 
+function myFunction(item, index) {
+  text += index + ": " + item + "<br>"; 
+}
+
+
+
+
+
+
+
+
+
+
+
